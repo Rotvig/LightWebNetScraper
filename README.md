@@ -10,6 +10,7 @@ The project consist of a libary.
 ### How do I get set up? ###
 
 * Include the nuget package and checkout the code example.
+* Nuget link https://www.nuget.org/packages/LightWebNetScraper
 
 License
 ====
