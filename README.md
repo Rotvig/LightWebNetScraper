@@ -7,6 +7,8 @@ LightWebNetScraper is a .NET project for doing simple scraping tasks.
 
 The project consist of a libary.
 
+Supports plain XPATH or XSLT.
+
 ### How do I get set up? ###
 
 * Include the nuget package and checkout the code example.
