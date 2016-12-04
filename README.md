@@ -12,6 +12,19 @@ The project consist of a libary.
 * Include the nuget package and checkout the code example.
 * Nuget link https://www.nuget.org/packages/LightWebNetScraper
 
+### Code example ###
+```cs
+var scraper = new Scraper();
+
+var result = scraper.StartScraping(new List<ScrapeInfo<string>>()
+{
+    new ScrapeInfo<string>(
+        "https://www.nuget.org/packages/LightWebNetScraper",
+        (htmlDoc, scrapeInfo) =>  htmlDoc.DocumentNode.SelectSingleNode(@"//span[@class='owner-name']").InnerHtml)
+});
+```
+The InnerHtml in this case is "Renerotvig"
+
 License
 ====
 
