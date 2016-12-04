@@ -10,8 +10,8 @@ namespace LightWebNetScraper
     public class Scraper
     {
         /// <summary>
-        /// Starts Scraping of the given urls.
-        /// Timeout is in milliseconds.
+        ///     Starts Scraping of the given urls.
+        ///     Timeout is in milliseconds.
         /// </summary>
         public List<T> StartScraping<T>(List<ScrapeInfo<T>> urls, int timeout = 5000)
         {
@@ -47,7 +47,7 @@ namespace LightWebNetScraper
             {
                 var lWebRequest = base.GetWebRequest(uri);
                 lWebRequest.Timeout = Timeout;
-                ((HttpWebRequest)lWebRequest).ReadWriteTimeout = Timeout;
+                ((HttpWebRequest) lWebRequest).ReadWriteTimeout = Timeout;
                 return lWebRequest;
             }
         }
