@@ -19,11 +19,13 @@ Supports plain XPATH or XSLT.
 var scraper = new Scraper();
 
 var result = scraper.StartScraping(new List<ScrapeInfo<string>>()
-{
-    new ScrapeInfo<string>(
-        "https://www.nuget.org/packages/LightWebNetScraper",
-        (htmlDoc, scrapeInfo) =>  htmlDoc.DocumentNode.SelectSingleNode(@"//span[@class='owner-name']").InnerHtml)
-});
+    {
+        new ScrapeInfo<string>(
+            "https://www.nuget.org/packages/LightWebNetScraper",
+            (htmlDoc, scrapeInfo) =>  htmlDoc.DocumentNode.SelectSingleNode(@"//div[@class='package-title']/h1").InnerHtml)
+        });
+Console.WriteLine(result[0]);
+Console.ReadLine();
 ```
 The InnerHtml in this case is "Renerotvig"
 
