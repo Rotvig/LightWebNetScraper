@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>René Rotvig Jensen</Authors>
+    <Company />
+    <Version>0.0.2</Version>
+    <PackageTags>Scraper Webscraper Htmlagilitypack</PackageTags>
+    <Description>Lightweight .NET Web Scraper</Description>
+    <PackageLicenseUrl>https://github.com/Rotvig/LightWebNetScraper/blob/master/License.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Rotvig/LightWebNetScraper/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Rotvig/LightWebNetScraper/</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>Upgraded to Netstandard 2.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.10" />
+  </ItemGroup>
+
+</Project>
