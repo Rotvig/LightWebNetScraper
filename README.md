@@ -1,7 +1,7 @@
 # LightWebNetScraper
 Lightweight .NET web scraper
 
-# README Version 0.0.1 #
+# README Version 0.0.2 #
 
 LightWebNetScraper is a .NET project for doing simple scraping tasks.
 
